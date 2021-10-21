@@ -136,7 +136,7 @@ function populateEpisodes(episodes) {
   $episodesList.empty();
 
   for (let episode of episodes) {
-    let $list = $(`<li>ID: ${episode.id} / Name: ${episode.name} / Season: ${episode.season} / Number: ${episode.number}  </li>`);
+    let $list = $(`<li>ID: ${episode.id} / Name: ${episode.name} / Season: ${episode.season} / Number: ${episode.number}</li>`);
 
     $episodesList.append($list);
   }
@@ -162,5 +162,7 @@ $(".container").on("click","#episode-button", async function (e) {
   populateEpisodes(episodes);
   
 });
+
+console.log(searchShows('pin'));
  
 
