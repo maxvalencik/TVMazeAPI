@@ -19,7 +19,7 @@
  */
 async function searchShows(query) {
   // Make an ajax request to the searchShows api.
-  const res = await axios.get(`http://api.tvmaze.com/search/shows?q=${query}`);
+  const res = await axios.get(`https://api.tvmaze.com/search/shows?q=${query}`);
 
    //array of objects to store shows found
   const shows = [];
